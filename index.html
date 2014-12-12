@@ -32,28 +32,33 @@
         <section name="page-wrap">
             <section id="header">
                 <nav>
-                    <ul id="nav-left">
-                        <li>Kitchens</li>
-                        <li>Baths</li>
-                        <li>Remodeling</li>
-                    </ul>
-                    <a class="logo" href="#"><img src="assets/img/parkerhouse2.png" /></a>
-                    <ul id="nav-right">
-                        <li>Design</li>
-                        <li>Consulting</li>
-                        <li>Contact</li>
-                    </ul>
-                    <ul id="nav-right-small">
-                        <li>(574) 274-5842</li>
-                    </ul>
+                    <div id="nav-wrap">
+                        <ul id="nav-left">
+                            <li>Kitchens</li>
+                            <li>Baths</li>
+                            <li>Remodeling</li>
+                        </ul>
+                        <a class="logo" href="#"><img src="assets/img/parkerhouse2.png" /></a>
+                        <ul id="nav-right">
+                            <li>Design</li>
+                            <li>Consulting</li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <ul id="nav-right-small">
+                            <li>(574) 274-5842</li>
+                        </ul>
+                    </div>
                 </nav>
             </section>
             <div class="slider-wrapper theme-default" name="img-slider">
                 <div class="ribbon"></div>
                 <div id="slider" class="nivoSlider">
                     <img src="assets/img/bath2.jpg" />
+                    <img src="assets/img/kitchen4.jpg" />
                     <img src="assets/img/bath3.jpg" />
+                    <img src="assets/img/lr1.jpg" />
                     <img src="assets/img/bath5.jpg" />
+                    <img src="assets/img/dr2.jpg" />
                 </div>
             </div>
             <section name="content-bottom">
@@ -66,12 +71,29 @@
                             </div>
                         </div>
                     </div>
-                    <div id="contact">
-                        <div class="content-text right">
-                            <p>ParkerHouse Remodeling is a <b>licensed, bonded and insured remodeling company</b>, and is certified as a lead renovator. References from satisfied customers available upon request.</p>
-                            <p>Questions or requests for a consultation can be requested by phone during normal business hours.</p>
-                            <p><b>(574) 274-5842</b></p>
+                    <div id="design">
+                        <div class="content-wrap">
+                            <div id="design-text" class="content-text right">
+                                <p>The project is designed with your involvement to make sure your tastes are central to the new look.</p>
+                                <p>Dave blends classic home styles with modern appliances and features to highlight your unique tastes.</p>
+                            </div>
                         </div>
+                    </div>
+                    <div id="contact">
+                        <div class="content-wrap">
+                            <div id="contact-text" class="content-text left">
+                                <p>ParkerHouse Remodeling is a <b>licensed, bonded and insured remodeling company</b>, and is certified as a lead renovator. References from satisfied customers available upon request.</p>
+                                <p>Questions or requests for a consultation can be requested by phone during normal business hours.</p>
+                                <p><b>(574) 274-5842</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section name="footer">
+                <div id="footer-wrap">
+                    <div id="credits">
+                        <p>designed by <a href="http://ohheybrian.com">Brian Bennett <img src="assets/img/ohb.ico" /></a></p>
                     </div>
                 </div>
             </section>
@@ -80,10 +102,9 @@
             $(document).ready(function() {
                 $("#slider").nivoSlider({
                     effect:'fade',
-                    pauseOnHover:false
+                    pauseOnHover:true
                 });
             })
-            
         </script>
     </body>
 </html>

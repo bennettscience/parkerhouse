@@ -11,7 +11,7 @@ body {
 p {
     font-family:'Oswald',sans-serif;
     font-weight:300;
-    font-size:18px;
+    font-size:22px;
 }
 b {
     font-family:inherit;
@@ -36,6 +36,10 @@ h3 {
     font-weight:800;
     font-size:32px;
 }
+a {
+    text-decoration: none;
+    color:inherit;
+}
 #header {
     height:110px;
     background-color:rgba(235,235,235,0.5);
@@ -47,6 +51,13 @@ nav {
     position:relative;
     z-index:10;
     text-align: center;
+    white-space: nowrap;
+}
+#nav-wrap {
+    min-width: 100%;
+    width: auto !important;
+    width:100%;
+    white-space:nowrap;
 }
 nav ul#nav-left, #nav-right {
     list-style-type:none;
@@ -67,9 +78,11 @@ nav ul.logo {
 }
 nav ul#nav-left {
     float:left;
+    margin-left:30px;
 }
 nav ul#nav-right {
     float:right;
+    margin-right:30px;
 }
 nav ul#nav-right-small {
     display:none;
@@ -83,9 +96,10 @@ nav ul li {
     padding:0 30px;
     margin-top:30px;
 }
-nav ul li:hover {
+nav ul#nav-right li:last-child {
     cursor:pointer;
     background-color:rgb(117,0,0);
+    color:#fff;
 }
 #slider {
     position:relative;
@@ -100,7 +114,6 @@ nav ul li:hover {
 #bottom-wrap {
     display:block;
     width:100%;
-    margin-bottom:15px;
 }
 #bottom-wrap div {
     height:425px;
@@ -109,11 +122,11 @@ nav ul li:hover {
     display:block;
     height:100%;
     width:100%;
-    background-color:rgba(235,235,235,0.75);
+    background-color:rgba(235,235,235,0.55);
 }
 .content-text {
     height:auto !important;
-    width:30%;
+    width:40%;
     margin:20px;
     padding:20px;
 }
@@ -131,10 +144,40 @@ div#about {
     background:url('../img/bath4.jpg') center center no-repeat;
     background-size:cover;
 }
+div#design {
+    background:url('../img/lr4.jpg') center center no-repeat;
+    background-size:cover;
+}
 div#contact {
     background:url('../img/bath1.jpg') center center no-repeat;
     background-size:cover;
 }
+footer {
+    height:45px;
+    width:100%;
+    background-color:rgba(235,235,235,0.5);
+}
+#credits {
+    float:right;
+    margin-right:30px;
+    padding:0 10px;
+    color:#a9a9a9;
+    -o-transision:0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+#credits img {
+    height:22px;
+    width:auto;
+    opacity:0.65;
+    vertical-align:middle;
+}
+#credits:hover {
+    background-color:#889988;
+    color:#fff;
+}
+
 
 /* --------- MEDIA QUERIES ------------ */
 @media screen and (max-width: 768px) {
