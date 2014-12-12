@@ -51,7 +51,7 @@
             <div class="slider-wrapper theme-default" name="img-slider">
                 <div class="ribbon"></div>
                 <div id="slider" class="nivoSlider">
-                    <img src="assets/img/bath2.jpg" alt="caption" title="Design and build contracting that works for you." />
+                    <img src="assets/img/bath2.jpg" />
                     <img src="assets/img/bath3.jpg" />
                     <img src="assets/img/bath5.jpg" />
                 </div>
@@ -59,14 +59,15 @@
             <section name="content-bottom">
                 <div id="bottom-wrap">
                     <div id="about">
-                        <div class="content left">
-                            <p>Dave Parker has over 20 years of experience in residential design and remodeling. He has designed many custom kitchens, bathrooms, and additions. Dave supervises all projects onsite from design to completion, doing most of his own trim work and tiling. ParkerHouse Remodeling is a design and build company, with quality subcontractors to keep the project on schedule.
-                            <p>All projects have a written contract and bid built around the customer's budget.</p>
+                        <div class="content-wrap">
+                            <div class="content-text left">
+                                <p>Dave Parker has over 20 years of experience in residential design and remodeling. He has designed many custom kitchens, bathrooms, and additions. Dave supervises all projects onsite from design to completion, doing most of his own trim work and tiling. ParkerHouse Remodeling is a design and build company, with quality subcontractors to keep the project on schedule.
+                                <p>All projects have a written contract and bid built around the customer's budget.</p>
+                            </div>
                         </div>
-                        
                     </div>
                     <div id="contact">
-                        <div class="content right">
+                        <div class="content-text right">
                             <p>ParkerHouse Remodeling is a <b>licensed, bonded and insured remodeling company</b>, and is certified as a lead renovator. References from satisfied customers available upon request.</p>
                             <p>Questions or requests for a consultation can be requested by phone during normal business hours.</p>
                             <p><b>(574) 274-5842</b></p>
@@ -77,7 +78,10 @@
         </section>
         <script>
             $(document).ready(function() {
-                $("#slider").nivoSlider();
+                $("#slider").nivoSlider({
+                    effect:'fade',
+                    pauseOnHover:false
+                });
             })
             
         </script>
