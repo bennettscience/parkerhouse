@@ -99,29 +99,39 @@ nav ul li:hover {
     overflow:hidden;
 }
 #bottom-wrap {
-    display:table;
-    table-layout: fixed;
-    width:90%;
-    margin:0 auto;
-    border-spacing: 10px;
+    display:block;
+    width:100%;
     margin-bottom:15px;
 }
-.section-title {
-    margin:0 !important;
-    padding:0 !important;
-    box-shadow:none !important;
-    position:relative;
-    display:inline-block;
-}
 #bottom-wrap div {
-    display:table-cell;
-    padding:0 50px;
-    height:100%;
-    background-color:rgba(235,235,235,1);
-    box-shadow: 0 0 5px #888;
+    height:425px;
 }
-.section-title p,h1,h2,h3,h4,h5,h6 {
-    text-transform: uppercase;
+.content {
+    position:relative;
+    display:block;
+    height:auto !important;
+    width:30%;
+    margin:20px;
+    padding:20px;
+    background-color:rgba(235,235,235,0.75);
+}
+.right {
+    float:right;
+    clear:both;
+    overflow:auto;
+    height:auto;
+}
+.left {
+    float:left;
+    clear:both;
+}
+div#about {
+    background:url('../img/bath4.jpg') center center no-repeat;
+    background-size:cover;
+}
+div#contact {
+    background:url('../img/bath1.jpg') center center no-repeat;
+    background-size:cover;
 }
 
 /* --------- MEDIA QUERIES ------------ */
