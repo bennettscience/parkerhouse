@@ -184,15 +184,11 @@ footer {
     #nav-left,#nav-right {
         display:none !important;
     }
-    nav ul#logo {
-        float:left;
-        margin:0;
-        padding:0;
-    }
-    nav ul#logo img {
+    nav .logo img {
         height:125px;
         width:auto;
-        margin-top:25px;
+        margin:25px 15px;
+        float:left;
     }
     nav ul#nav-right-small {
         float:right;
@@ -201,7 +197,8 @@ footer {
         padding:0;
     }
     nav ul#nav-right-small li {
-        font-size:24px;
+        font-size:34px;
+        padding-right:35px;
     }
     #slider {
         height:340px;
@@ -218,4 +215,7 @@ footer {
         padding:0;
         margin:0;
     }
+    .content-wrap {
+        padding:0;
+        margin:0;
 }
