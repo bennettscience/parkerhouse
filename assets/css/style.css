@@ -51,7 +51,6 @@ nav {
     position:relative;
     z-index:10;
     text-align: center;
-    white-space: nowrap;
 }
 #nav-wrap {
     min-width: 100%;
@@ -74,15 +73,6 @@ nav img {
     max-height:225px;
     vertical-align:top;
 }
-
-/*nav ul#nav-left {
-    float:left;
-    margin-left:30px;
-}
-nav ul#nav-right {
-    float:right;
-    margin-right:30px;
-}*/
 nav ul#nav-right-small {
     display:none;
 }
@@ -90,7 +80,7 @@ nav ul li {
     display:inline-block;
     text-align:center;
     font-family: 'Oswald',helvetica,arial,sans-serif;
-    font-size:28px;
+    font-size:1.8rem;
     font-weight:400;
     padding:0 30px;
     margin-top:30px;
