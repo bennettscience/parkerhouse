@@ -61,29 +61,28 @@ nav {
 }
 nav ul#nav-left, #nav-right {
     list-style-type:none;
+    display:inline-block;
     margin:0;
     padding:0;
     width:auto;
     height:100%;
 }
-nav ul.logo {
+nav img {
     display:inline-block;
     padding:0;
     margin:0;
     max-height:225px;
+    vertical-align:top;
 }
-.logo img {
-    max-height:225px;
-    max-width:30%;
-}
-nav ul#nav-left {
+
+/*nav ul#nav-left {
     float:left;
     margin-left:30px;
 }
 nav ul#nav-right {
     float:right;
     margin-right:30px;
-}
+}*/
 nav ul#nav-right-small {
     display:none;
 }
@@ -141,7 +140,7 @@ nav ul#nav-right li:last-child {
     clear:both;
 }
 div#about {
-    background:url('../img/bath4.jpg') center center no-repeat;
+    background:url('../img/bath3.jpg') center center no-repeat;
     background-size:cover;
 }
 div#design {
