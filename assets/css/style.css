@@ -183,6 +183,9 @@ footer {
 .ui-dialog-titlebar {
     font-family:'Oswald',helvetica,arial,sans-serif;
 }
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
 
 
 /* --------- MEDIA QUERIES ------------ */

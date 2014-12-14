@@ -117,6 +117,7 @@
                 buttons: [
                     {
                         text: "Ok",
+                        tabIndex: -1,
                         click: function() {
                             $(this).dialog("close")
                         },
@@ -128,7 +129,7 @@
                 show: true
             });
             $("li#contact").click(function() {
-                $("div#contact-message").dialog( "open" );
+                $("div#contact-message").dialog("open");
             })
         </script>
     </body>
