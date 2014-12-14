@@ -189,6 +189,11 @@ footer {
 .ui-dialog-titlebar {
     font-family:'Oswald',helvetica,arial,sans-serif;
 }
+.ui-widget button {
+    font-family:'Oswald',helvetica,arial,sans-serif !important;
+    font-weight:300;
+    font-size:1.8rem;
+}
 .ui-dialog-titlebar-close {
     visibility: hidden;
 }
