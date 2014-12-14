@@ -111,6 +111,12 @@ nav ul#nav-right li:last-child:hover {
     height:auto;
     overflow:hidden;
 }
+#paused {
+    position:relative;
+    margin:0;
+    padding:0;
+    top:0;
+}
 #bottom-wrap {
     display:block;
     width:100%;
@@ -193,44 +199,64 @@ footer {
     nav ul li {
         padding: 0 10px;
     }
+    #slider {
+        height:500px;
+    }
 }
-
+@media screen and (max-width: 895px) {
+    nav ul li {
+        font-size:1.5rem;
+    }
+    nav img {
+        width:185px;
+        height:auto;
+    }
+}
 @media screen and (max-width: 768px) {
+    #header {
+        height:auto;
+    }
     #nav-left,#nav-right {
         display:none !important;
     }
     nav img {
+        position:relative;
         height:125px;
         width:auto;
-        margin:25px 15px;
+        z-index:10;
+        display:inline-block;
         float:left;
     }
     nav ul#nav-right-small {
         float:right;
         display:inline-block;
-        margin-top:45px;
         padding:0;
+        margin:0;
     }
     nav ul#nav-right-small li {
         font-size:34px;
-        padding-right:35px;
     }
     #slider {
-        height:340px;
+        height:auto;
         width:100%;
     }
     #bottom-wrap div {
         display:block;
-        margin-bottom: 25px;
         width:100%;
-        height:300px;
+        height:auto;
+        float:none;
     }
     .content-text {
-        width:100%;
-        padding:0;
+        width:90% !important;
+        padding:10px;
         margin:0;
+    }
+    .content-text p {
+        font-size:1.3rem;
     }
     .content-wrap {
         padding:0;
         margin:0;
+    }
+    
 }
