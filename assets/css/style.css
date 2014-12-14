@@ -89,7 +89,16 @@ nav ul#nav-right li:last-child {
     cursor:pointer;
     background-color:rgb(117,0,0);
     color:#fff;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -transition: .5s;
 }
+nav ul#nav-right li:last-child:hover {
+    background-color:inherit;
+    color:#000;
+}
+
 #slider {
     position:relative;
     height:600px;
@@ -169,11 +178,17 @@ footer {
 
 
 /* --------- MEDIA QUERIES ------------ */
+@media screen and (max-width: 1100px) {
+    nav ul li {
+        padding: 0 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #nav-left,#nav-right {
         display:none !important;
     }
-    nav .logo img {
+    nav img {
         height:125px;
         width:auto;
         margin:25px 15px;
