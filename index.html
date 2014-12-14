@@ -92,7 +92,8 @@
                     </div>
                 </div>
                     <div id="contact-message" title="Contact ParkerHouse Remodeling">
-                        <p>Please call <b>574-274-5842</b> to schedule your consultation.</p>
+                        <p>Phone: <b>574-274-5842</b></p>
+                        <p>Email: parkerhouseremodeling@gmail.com</p>
                     </div>
             </section>
             <section name="footer">
@@ -110,17 +111,24 @@
                     pauseOnHover:true
                 });
             })
-            $("div#contact-message").dialog({ autoOpen: false });
+            $("div#contact-message").dialog({
+                autoOpen: false,
+                width:500,
+                buttons: [
+                    {
+                        text: "Ok",
+                        click: function() {
+                            $(this).dialog("close")
+                        },
+                    }
+                ],
+                modal:true,
+                draggable: false,
+                resizable: false,
+                show: true
+            });
             $("li#contact").click(function() {
-                $("div#contact-message").dialog( "open", {
-                    buttons: [
-                        {text: "Ok"}
-                    ],
-                    modal:true,
-                    width: 300,
-                    draggable: false,
-                    resizable: false
-                });
+                $("div#contact-message").dialog( "open" );
             })
         </script>
     </body>

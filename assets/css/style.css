@@ -40,6 +40,9 @@ a {
     text-decoration: none;
     color:inherit;
 }
+button {
+    border-radius: 0 !important;
+}
 #header {
     height:110px;
     background-color:rgba(235,235,235,0.5);
@@ -98,7 +101,6 @@ nav ul#nav-right li:last-child:hover {
     background-color:inherit;
     color:#000;
 }
-
 #slider {
     position:relative;
     height:600px;
@@ -174,6 +176,12 @@ footer {
 #credits:hover {
     background-color:#889988;
     color:#fff;
+}
+.ui-dialog > div {
+    border-radius:0;
+}
+.ui-dialog-titlebar {
+    font-family:'Oswald',helvetica,arial,sans-serif;
 }
 
 
