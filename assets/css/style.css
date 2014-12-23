@@ -183,11 +183,25 @@ footer {
     background-color:#889988;
     color:#fff;
 }
-.ui-dialog > div {
-    border-radius:0;
+.ui-dialog {
+    border:none !important;
+    padding:0 !important;
+    
+}
+.ui-dialog > div, .ui-corner-all {
+    border-radius:0 !important;
 }
 .ui-dialog-titlebar {
     font-family:'Oswald',helvetica,arial,sans-serif;
+    color: #fff !important;
+    font-size:32px;
+    font-weight:300 !important;
+    background:rgba(157,51,15,1) !important;
+    border:0 !important;
+    padding:.4em .5em !important;
+}
+.ui-widget-header {
+    border:none;
 }
 .ui-widget button {
     font-family:'Oswald',helvetica,arial,sans-serif !important;
